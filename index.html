@@ -6,104 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
 
-        body {
-            background-image: url(fg2.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 97vh;
-        }
+        #div1 {
 
-        .flip-card {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-            width: 220px;
-            height: 420px;
-            perspective: 800px;
-            /* Remove this if you don't want the 3D effect */
-
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;    
 
         }
 
-        /* This container is needed to position the front and back side */
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
+       .d2{
+        padding: 1px;
+       }
+
+       .d2:hover{
+            scale: 125%;
+            margin: 13px;
+            transition: 0.8s;
         }
 
-        /* Do an horizontal flip when you move the mouse over the flip box container */
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
+        img{
+             border-radius: 5px;
+             width: 17.5vw;
         }
-
-        /* Position the front and back side */
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            /* Safari */
-            backface-visibility: hidden;
-        }
-
-        /* Style the front side (fallback if image is missing) */
-        .flip-card-front {
-            background-color: #cbcbcb;
-            color: black;
-            border-radius: 8px;
-            box-shadow: 0px 0px 0px 3px rgba(255, 5, 5, 0.624);
-        }
-
-        /* Style the back side */
-        .flip-card-back {
-            padding: 5px;
-            background-color: rgb(40, 36, 36);
-            color: rgb(255, 0, 0);
-            transform: rotateY(180deg);
-            text-align: left;
-            border-radius: 8px;
-            font: 1em sans-serif;
-            box-shadow: 0px 0px 0px 3px rgba(255, 5, 5, 0.608);
-
-        }
-
-        p {
-            color: rgb(255, 255, 255);  text-align: justify;
-        }
+    
     </style>
 </head>
 
 <body>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="i3.jpg" alt="Avatar" style="width:220px;height:420px;border-radius: 8px;">
-            </div>
-            <div class="flip-card-back">
-                <h4>  Feliz dia dos namorados❤️ </h4>
+    <div id="div1">
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/cr7150.jpg">
+                <img src="img/cr7.700.jpg" alt="Cristiano Ronaldo">
+            </picture>
+        </div>
 
-                <p>
-                        Hoje é nosso dia, amor!🥳 <br><br>
-                    Muito obrigada por esse ano magnifíco ao seu lado, muito obrigada  por  vc  ser  essa mulher  tão  incrível,  linda,  inteligente,  carinhosa... <br>
-                    Pode  esperar  que  iremos  comemorar  mais,  no minímo,  450  anos  juntinhos🥰.<br>
-                    Te  perturbar  é  maravilhoso,  mas  ver  seu  sorriso  e  sua  alegria  é  mil  vezes  melhor AMO❤️
-                    <br>
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/messi150.jpg">
+                <img src="img/messi.700.jpg" alt="Lionel Messi">
+            </picture>
+        </div>
 
-                                EU TE AMO❤️❤️ <br>     E sempre irei te amar❤️❤️
-                </p>
-            </div>
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/neymar150.jpg">
+                <img src="img/neymar.700.jpg" alt="">
+            </picture>
+        </div>
+
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/neuer150.jpg">
+                <img src="img/neuer.700.jpg" alt="">
+            </picture>
+        </div>
+        <div class="d2" id="d5">
+            <picture>
+                <source media="min-width: 300px" srcset="img/Sérgio Ramos150.jpeg">
+                <img src="img/Sérgio Ramos700.jpg" alt="Sérgio Ramos"></source>
+            </picture>
         </div>
     </div>
 </body>
-
 </html>
